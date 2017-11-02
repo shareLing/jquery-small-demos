@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>demmo2</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div id="outer" style="position: relative;">outer
+		<div id="wrap" style="position: absolute;left: 10px;top: 20px;">wrap
+			<div>1111</div>
+			<div>22222</div>
+			<p id="p1">我是<span>第1个</span>p标签</p>
+			<p id="p2">我是第2个p标签</p>
+			<p id="p3">我是第3个p标签</p>
+			<div>我是div标签</div>
+	    </div>
+	</div>
+
+	<form action="">
+		<input type="text" name=""  id="" value="我是第一个input的值" />
+		<input type="text" name=""  id="" value="我是第二个input的值" />
+		<input type="text" name=""  id="" value="我是第三个input的值" />
+		<input type="text" name=""  id="" value="我是第四个input的值" />
+	</form>
+	<script>
+		//$("#wrap p").css('background','red');
+		//children()选取子元素
+		//$('#wrap').children().not('div').css('background','red');
+
+
+		//parent()选取父元素
+		//$("#p1").parent().css('background','red');
+		//parents()选取祖先元素
+		//$("#p1").parents('#outer').css('background','red');
+
+
+		//offsetParent()返回父元素中第一个其position为relative或者是absolute的元素，仅对可见元素有效
+		//$('p').offsetParent().css('background','red');
+
+		//next()选择后面紧邻的兄弟元素
+		//$('#p1').next().css('background','red');
+		//nextAll()查找当前元素之后所有的同辈元素
+		// $('#p1').nextAll().not('div').css('background','red');
+
+		//prev()前一个兄弟元素
+		//$('#p2').prev().css('background','red');
+		//prevAll()前面所有的兄弟元素
+		// $('#p3').prevAll().css('background','red');
+
+		//siblings()前后所有的兄弟元素
+		// $("#p2").siblings().css('background','red');
+
+		//end()终止在当前链的最新过滤操作，并返回匹配的元素的以前状态
+		// $('span').parent().css('background','red').end().css('background','#abcdef');
+
+
+		//addBack()把最开始选取的元素添加到当前的集合中
+		//$("#p1").nextAll().addBack().css('background','#abcdef');
+
+
+		//each()遍历
+		$('input').each(function(){
+			alert($(this).val());
+		});
+	</script>
+
+</body>
+</html>

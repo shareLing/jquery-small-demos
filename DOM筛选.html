@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>demo1</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<p class="first">我是第1个p元素</p>
+	<p>我是第2个p元素</p>
+	<p>我是第3个p元素</p>
+	<p>我是第4个p元素</p>
+	<p>我是第5个p元素</p>
+	<p>我是第6个p元素</p>
+
+	<form action="">
+		<input type="text" name="" value="123">
+		<input type="text" name="" value="234">
+		<input type="text" name="" value="345">
+	</form>
+
+	<div></div>
+</body>
+<script>
+//eq()选择指定索引的元素
+	//$('p:eq(0)').css('background','red');
+//filter(表达式)筛选指定表达式的元素
+	//$('p').filter(':odd').css('background','red');
+//first()选择第一个元素
+	//$('p').last().css('background','red');
+//last()选择最后一个元素
+//is()检测是否元素返回布尔值
+/*	$('p').click(function(){
+		if($(this).is('.first')){
+			$(this).css('background','red');
+		}
+	});*/
+//has()保留包含特定后代的元素，去掉那些不含有指定后代的元素
+//not()从匹配的元素集合中移除指定的元素
+	// $('p').not(':last').css('background','red');
+//map()将一组元素转换成其他数组
+	/*	var arr=$('input').map(function(){
+			return $(this).val()
+		}).get().join(',');
+		alert(typeof arr);
+		$('div').html(arr);*/
+
+//slice()根据指定的下标范围，选取匹配的元素,传整数时从0开始计数
+	$('p').slice(1,5).css('background','red');
+</script>
+</html>

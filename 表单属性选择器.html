@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>demo7</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<input type="text" name="" id="" value="我是不能修改的文本框" disabled="disabled">
+	<input type="text" name="" id="" value="我是能修改的文本框">
+
+
+	<script>
+		//alert($('input:disabled').val());
+		alert($('input:enabled').val());
+
+		alert($('input[disabled=disabled]').val());
+	</script>
+</body>
+</html>

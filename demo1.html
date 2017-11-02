@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo1</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<a href="#">点击我加边框</a>
+<!-- 当页面加载完毕的时候，我要让a标签里的文字变成红色，当我点击这个a标签的时候，我需要让这个a标签有一个红色的边框 -->
+<script>
+//alert(1);
+/*原生javascript
+	var a=document.getElementsByTagName('a')[0];
+	a.style.color="red";
+	a.onclick=function(){
+		this.style.border="5px solid #f90";
+	}*/
+
+	var a=$("a");
+	a.css('color','red').click(function(){
+		$(this).css('border','5px solid #38a38a');
+	});
+
+
+</script>
+</body>
+</html>

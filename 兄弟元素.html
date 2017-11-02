@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>dome1</title>
+	<style type="text/css">
+	/*用加号来表示选择div元素的紧邻的兄弟元素*/
+	/*	div+p{color: green;}*/
+	/*用~来表示div元素后面的所有兄弟元素*/
+	div~p{color: blue;}
+	</style>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+	$(function(){
+		//加号表示兄弟标签
+		$("div+p").css('color','green');
+		// 等同于$("div").next().css('color','green');
+	});
+	</script>
+</head>
+<body>
+	<div>jrheu</div>
+	<p>我是p标签</p>
+	<span>dsjuifhe</span>
+	<p>我是p标签</p>
+</body>
+</html>

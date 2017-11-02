@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>demo6</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<form action="">
+	<input type="hidden" name="" value="我是隐藏的文本框">
+	<input type="text" name="" id="" value="我是文本框">
+	<input type="password" name="" id="" value="我说密码框">
+	<input type="submit" name="" id="" value="我说提交按钮">
+	<input type="radio" name="" id="" value="我是单选按钮">
+	<input type="checkbox" name="" id="" value="我是复选按钮">
+	<input type="reset" name="" id="" value="我是重置按钮">
+	<textare name="" id="" cols="30" rows="10"></textarea>
+
+	<select name="" id="">
+		<option value="1111">1111</option>
+		<option value="2222">2222</option>
+		<option value="3333">3333</option>
+		<option value="4444">4444</option>
+	</select>
+</form>
+
+<script>
+//：input选择所有的表单元素
+alert($(":input").length);
+//:text选取文本框
+alert($(":text").length);
+$(':text').css('background','red');
+</script>
+</body>
+</html>
