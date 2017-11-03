@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>append()的用法</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<p>我是p标签</p>
+	<script>
+		var newElement=$('<div>div标签</div>');
+		$('body').append(newElement);
+		//内部插入
+		var strong=$('<strong>我是strong标签</srtong>');
+		//append()向每个匹配元素尾部插入DOM,匹配元素在前，appenndTo()匹配元素在后
+			//$('p').append(strong);
+			//strong.appendTo($('p'));
+
+		//prepend()向每个匹配元素头部插入DOM,匹配元素在前
+			/*$('p').prepend(strong);
+			atrong.prependTo($('p'));*/
+
+
+		//外部插入
+		//after()在匹配元素之后插入DOM,匹配元素在前
+		   //$('p').after(strong);
+		//inertAfter()在匹配元素之后插入DOM,匹配元素在后
+			//strong.insertAfter($('p'));
+
+
+	 	//before()在匹配元素之前插入DOM,匹配元素在前
+		 	// $('p').before(strong);
+		//insetBefore()在匹配元素之前插入DOM,匹配元素在后
+			strong.insertBefore($('p'));
+	</script>
+</body>
+</html>

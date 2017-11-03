@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>demo2</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<p>我是第一个p标签</p>
+	<p>我是第二个p标签</p>
+
+	<script>
+	//wrap()将所有匹配元素单独包裹
+		//$('p').wrap('<div></div>');
+	//wrapAll()将所有匹配元素用一个元素包裹
+		//$('p').wrapAll('<div></div>');
+	//wrapLnner()将所有匹配元素的子内容(文本内容)用其它标签包裹
+	$('p').wrapInner('<div></div>');
+	</script>
+</body>
+</html>

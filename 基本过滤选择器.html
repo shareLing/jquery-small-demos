@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo1</title>
+	<style>
+	#go{width: 100px;height: 100px;background-color: teal;position: absolute;left: 0;top: 0;}
+	</style>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<p>我<span>是第</span>一<em>个p标</em>签</p>
+	<p>我是第2个p标签</p>
+	<p class="a">我是第3个p标签</p>
+	<p>我是第4个p标签</p>
+	<p>我是第5个p标签</p>
+
+	<h1>我是h1标签</h1>
+	<h2>我是h2标签</h2>
+	<h3>我是h3标签</h3>
+	<h4>我是h4标签</h4>
+	<h5>我是h5标签</h5>
+	<h6>我是h6标签</h6>
+
+	<div id="go"></div>
+	<script>
+	//p后面不加空格，加了的话选择的是p标签的第一个子孙元素
+		//$('p :first').css('background','red');
+		//$('p:last').css('background','red');
+
+		// $('p').not('.a').css('background','red');两种写法都可以
+		//$("p:not('.a')").css('background','red');
+
+
+		//偶数变背景色,从0开始计数
+		//$("p:even").css('background','red');
+
+		//奇数：$("p:odd").css('background','red');
+
+
+		//指定某个变背景色,也从0开始计数
+		//$("p:eq(3)").css('background','red');
+
+		//下标大于几,也从0开始计数
+		//$('p:gt(2)').css('background','red');
+
+		//下标小于几,也从0开始计数
+		//$('p:lt(2)').css('background','red');
+
+		//：header选择h1到h6的标题标签
+		//$(':header').css('background','red');
+
+
+		//:animated选取正在执行动画的元素
+		$('#go').animate({'left':1000+'px'},10000);
+		//$('#go').animate({'left':'1000'},100000);
+		$(':animated').css('background','red');
+	</script>
+</body>
+</html>

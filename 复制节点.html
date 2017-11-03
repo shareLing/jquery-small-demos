@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo5</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<a href="#">点击</a>
+
+	<script>
+		//clone(布尔值)默认值为false 克隆节点
+		var newA=$('a').clone(true);
+		$('body').append(newA);
+
+		$('a').click(function(){
+			alert(1111);
+		});
+	</script>
+</body>
+</html>
