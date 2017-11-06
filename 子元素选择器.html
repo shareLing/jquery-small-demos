@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>demo5</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div>
+		<p>我是第一个p元素</p>
+		<p>我是第二个p元素</p>
+		<p>我是第3个p元素</p>
+		<p>我是第4个p元素</p>
+		<p>我是第5个p元素</p>
+		<p>我是第6个p元素</p>
+		<p>我是第7个p元素</p>
+	</div>
+
+	<script>
+		//:first-child选择父元素的第一个子元素
+		$('div p:first-child').css('background','red');
+
+		//:nth-(child表示选取父元素中的第x个元素，x有表达式来决定(*注意：从1开始计数)
+		$('div p:nth-child(2)').css('background','red');
+	</script>
+</body>
+</html>
